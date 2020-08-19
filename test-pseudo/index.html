@@ -8,16 +8,25 @@
     <title>Test for pseudo selectors (:before, :after)</title>
 
     <style>
-        span::before {
+        #one > span:before {
             content: "<<";
             color: red;
+        }
+
+        #two > span::before {
+            content: "<<";
+            color: greenyellow;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <span>Text</span>
+    <div id='one'>
+        <span>one dot in pseudo selector</span>
+    </div>
+
+    <div id='two'>
+        <span>two dots in pseudo selector</span>
     </div>
 </body>
 
