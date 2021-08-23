@@ -1,0 +1,1 @@
+This folder contains one html file which makes request to image. This image will be blocked by extension.
